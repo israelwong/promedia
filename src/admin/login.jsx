@@ -3,10 +3,12 @@ import { AuthContext } from "../auth/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { Input } from "@nextui-org/react";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 function loginForm() {
   const { login } = React.useContext(AuthContext);
-  const { setIsAuthenticated } = React.useContext(AuthContext);
+  // const { setIsAuthenticated } = React.useContext(AuthContext);
+  const [error, setError] = useState(false);
   const navigate = useNavigate();
 
   const {
@@ -19,11 +21,12 @@ function loginForm() {
   async function validar(data) {
     if (data.user != "" && data.password != "") {
       const response = await login(data.user, data.password);
-      console.log(response);
+      // console.log(response);
       if (response) {
-        setIsAuthenticated(true);
+        // setIsAuthenticated(true);
         navigate("/admin/dashboard");
-      }
+        setError(false);
+      } else setError(true);
     }
   }
 
@@ -55,20 +58,25 @@ function loginForm() {
               {...register("user", { required: "Usuario requerido" })}
               type="text"
               label="Nombre de usuario"
-              defaultValue=""
+              defaultValue="ing.israel.wong@gmail.com"
             />
             <p className="text-sm">{errors.user?.message}</p>
             <Input
               {...register("password", { required: "Clave requerida" })}
               type="password"
               label="Clave de acceso"
-              defaultValue=""
+              defaultValue="554454658"
             />
             <p className="text-sm">{errors.password?.message}</p>
             <button className="btn w-full bg-cyan-800 hover:bg-cyan-950">
               Iniciar sesión
             </button>
           </form>
+          {error && (
+            <p className="text-center text-warning py-5">
+              Verifica el nombre de usuario y la contraseña
+            </p>
+          )}
         </div>
       </div>
     </div>

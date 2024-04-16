@@ -1,14 +1,18 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../auth/AuthContext";
+import { useNavigate } from "react-router-dom";
+// import { AuthContext } from "../auth/AuthContext";
 
 function dashboard() {
-  const { setIsAuthenticated } = React.useContext(AuthContext);
+  const user = JSON.parse(localStorage.getItem("UserData"));
+  const navigate = useNavigate();
+  // const { setIsAuthenticated } = React.useContext(AuthContext);
 
   async function handleLogout(e) {
     e.preventDefault();
-    console.log("Cerrar sesión");
-    setIsAuthenticated(false);
+    localStorage.removeItem("UserData");
+    navigate("/admin");
+    // console.log("Cerrar sesión");
+    // setIsAuthenticated(false);
   }
 
   return (
