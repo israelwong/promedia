@@ -5,10 +5,10 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/promediamx/",
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+  // base: "/promedia/",
+  // resolve: {
+  //   alias: {
+  //     "@": path.resolve(__dirname, "./src"),
+  //   },
+  // },
 });
