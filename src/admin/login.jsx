@@ -58,14 +58,14 @@ function loginForm() {
               {...register("user", { required: "Usuario requerido" })}
               type="text"
               label="Nombre de usuario"
-              defaultValue="ing.israel.wong@gmail.com"
+              defaultValue=""
             />
             <p className="text-sm">{errors.user?.message}</p>
             <Input
               {...register("password", { required: "Clave requerida" })}
               type="password"
               label="Clave de acceso"
-              defaultValue="554454658"
+              defaultValue=""
             />
             <p className="text-sm">{errors.password?.message}</p>
             <button className="btn w-full bg-cyan-800 hover:bg-cyan-950">

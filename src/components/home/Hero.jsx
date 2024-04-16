@@ -29,7 +29,13 @@ function Hero() {
       <p className="text-7xl font-extrabold text-center">contenido</p>
 
       {/* Animación para */}
-      <p className="text-5xl mb-3">
+      <p
+        className="
+      text-4xl 
+      
+      mb-3
+      "
+      >
         para{" "}
         <span
           className="
@@ -50,8 +56,6 @@ function Hero() {
               "artistas",
               1000,
               "influencers",
-              1000,
-              "otras agencias",
               1000,
             ]}
             wrapper="span"
