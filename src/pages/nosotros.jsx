@@ -37,7 +37,7 @@ function nosotros() {
                 height={22}
                 width={22}
                 radius="sm"
-                src="./src/images/logos/promedia/favicon_color.svg"
+                src="./images/logos/promedia/favicon_color.svg"
               />
               <div className="flex flex-col">
                 <p className="text-3xl font-Bebas-Neue py-2 text-gray-300">
@@ -101,7 +101,7 @@ function nosotros() {
             </h1>
             <p
               className="
-            text-7xl
+            text-4xl
             md:text-6xl md:pt-8
             align-middle
             animate-pulse

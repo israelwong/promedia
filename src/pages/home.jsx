@@ -1,21 +1,39 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Hero from "../components/home/Hero.jsx";
 import ClientesLogos from "../components/home/ClientesLogos.jsx";
-import Carrusel from "../components/home/Carrusel.jsx";
 
 function home() {
-  function handleClick() {
-    console.log("Home");
-  }
+  const videoEl = useRef(null);
+
+  const attemptPlay = () => {
+    videoEl &&
+      videoEl.current &&
+      videoEl.current.play().catch((error) => {
+        console.error("Error attempting to play", error);
+      });
+  };
+
+  useEffect(() => {
+    attemptPlay();
+  }, []);
 
   return (
     <div className="">
       <div>
         <Hero />
       </div>
-      {/* <div>
-        <Carrusel />
-      </div> */}
+      <div>
+        <video
+          className="w-full py-8 md:p-0 md:w-[80%] md:m-auto"
+          playsInline
+          loop
+          muted
+          // controls
+          alt="All the devices"
+          src="./bites/alimentos.mp4"
+          ref={videoEl}
+        />
+      </div>
       <div>
         <ClientesLogos />
       </div>

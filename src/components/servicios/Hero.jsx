@@ -33,7 +33,7 @@ function Hero() {
           className="
         bg-clip-text text-transparent 
         bg-gradient-to-r from-pink-500 to-purple-950
-        text-6xl 
+        text-4xl 
         md:text-8xl
         font-bold
         py-2
@@ -53,7 +53,7 @@ function Hero() {
               1000,
               "producimos",
               1000,
-              "dgitaizamos",
+              "automatizamos",
               1000,
             ]}
             wrapper="span"

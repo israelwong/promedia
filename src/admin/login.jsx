@@ -31,25 +31,29 @@ function loginForm() {
   }
 
   return (
-    <div>
+    <div className="h-full">
       <div
         className="
       p-0
       w-full
-      md:p-20
+      h-fit
       "
       >
         <div
           className=" 
           px-10
           py-24
-        w-full 
         md:w-[400px]
         md:max-sm 
-        md:py-26
         m-auto
         "
         >
+          <img
+            height={100}
+            src="./images/logos/promedia/promedia_full_gray.svg"
+            className="m-auto p-10"
+          />
+
           <h1 className="py-3 text-center font-Bebas-Neue text-2xl">
             Iniciar sesión
           </h1>
