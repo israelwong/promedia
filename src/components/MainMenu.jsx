@@ -88,9 +88,9 @@ function MainMenu() {
           {/* <button className="btn" onClick={() => openLink()}>
             Contactar <i className="fab fa-whatsapp"></i>
           </button> */}
-          <a className="btn" href="/admin">
+          <Link className="btn" to={"/admin"}>
             Login
-          </a>
+          </Link>
         </div>
       </div>
     </>
