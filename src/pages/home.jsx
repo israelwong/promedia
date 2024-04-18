@@ -24,13 +24,12 @@ function home() {
       </div>
       <div>
         <video
-          className="w-full py-8 md:p-0 md:w-[80%] md:m-auto"
+          className="w-full py-8 md:p-0 md:w-[70%] md:m-auto"
           playsInline
           loop
-          muted
-          // controls
+          controls
           alt="All the devices"
-          src="./bites/alimentos.mp4"
+          src="./bites/reel_2024_720_CBR3.mp4"
           ref={videoEl}
         />
       </div>

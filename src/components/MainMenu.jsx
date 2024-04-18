@@ -5,7 +5,7 @@ function MainMenu() {
     { title: "Bienvenido", url: "/" },
     { title: "Nosotros", url: "/nosotros" },
     { title: "Servicios", url: "/servicios" },
-    { title: "Portafolio", url: "/portafolio" },
+    // { title: "Portafolio", url: "/portafolio" },
     // { title: "Contacto", url: "/contacto" },
   ];
 
