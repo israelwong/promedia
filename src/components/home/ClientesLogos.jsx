@@ -47,7 +47,10 @@ function ClientesLogos() {
     <section id="press" className="dark">
       <div className="py-14 px-10">
         <div className="container mx-auto px-4 md:px-8">
-          <h3 className="text-center font-semibold text-cyan-950 font-Bebas-Neue text-4xl pb-5">
+          <h3
+            className="
+          tracking-wide text-center font-semibold text-gray-500 font-Bebas-Neue text-2xl pb-5"
+          >
             NUESTROS CLIENTES
           </h3>
           <div className="relative mt-6">

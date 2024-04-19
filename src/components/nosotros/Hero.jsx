@@ -4,7 +4,7 @@ import { Chip } from "@nextui-org/react";
 function Hero() {
   return (
     <div>
-      <section className="text-center items-center py-10 md:py-24 md:px-20">
+      <section className="text-center items-center py-10 md:py-15 md:px-20">
         <p
           className="
             text-4xl py-12 px-5
@@ -18,11 +18,11 @@ function Hero() {
             branding
           </span>
           ,{" "}
-          <span className="text-yellow-600 underline decoration-solid font-Bebas-Neue">
+          <span className="text-yellow-600 underline decoration-wavy font-Bebas-Neue">
             marketing
           </span>{" "}
           y{" "}
-          <span className="text-cyan-600 underline decoration-wavy font-Bebas-Neue">
+          <span className="text-cyan-600 underline decoration-solid font-Bebas-Neue">
             social content
           </span>
         </p>

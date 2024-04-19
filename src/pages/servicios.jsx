@@ -1,35 +1,13 @@
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import Hero from "../components/servicios/Hero";
+import Servicios from "../components/servicios/Servicios";
 
 function servicios() {
-  const servicios = [
-    {
-      servicio: "Fotografía",
-      servicios: ["Corporativo", "Retrato", "Producto", "Social"],
-      banner: "",
-    },
-    {
-      servicio: "Video",
-      servicios: ["Corporativo", "Promocional", "Social", "Musical"],
-      banner: "",
-    },
-    {
-      servicio: "Diseño gráfico",
-      servicios: ["Identidad", "Editorial", "Digital", "Empaque"],
-      banner: "",
-    },
-    {
-      servicio: "Diseño web",
-      servicios: ["Portal", "Pagina web", "Landing page", "Pasarea de pagos"],
-      banner: "",
-    },
-  ];
-
   const faq = [
     {
       pregunta: "¿Cuál es el precio de un video?",
       respuesta:
-        "Los precios varian según el tiempo, número de locaciones, equipo de producción, días de grabación, talentos, musicalización y un sin fon de cosas, para tener un precio exacto es necesario nos platiques tu proeycto",
+        "Los precios varian según el tiempo, número de locaciones, equipo de producción, días de grabación, talentos, musicalización y un sin fin de cosas, para tener un precio exacto es necesario nos platiques tu proyecto",
     },
     {
       pregunta: "Ya tengo mi video, ¿Me lo peden editar?",
@@ -67,47 +45,7 @@ function servicios() {
       max-w-lg
       "
       >
-        {/* //!LISTA SERVICIOS */}
-        <div
-          className="
-      md:max-w-lg
-      grid
-      grid-cols-1
-      md:grid-cols-2
-      gap-4 place-content-center
-      align-middle
-      content-center
-      m-auto
-      "
-        >
-          {servicios.map((servicio, index) => (
-            <section
-              key={index}
-              className="
-          p-5
-          ring-1 ring-gray-500
-          "
-            >
-              {/* <div className="order-2 md:order-1"> */}
-              <h1
-                className="
-                font-Bebas-Neue text-4xl
-                text-cyan-800
-              "
-              >
-                {servicio.servicio}
-              </h1>
-              <ul className="list-disc pl-5">
-                {servicio.servicios.map((servicio, index) => (
-                  <li key={index}>{servicio}</li>
-                ))}
-              </ul>
-              {/* </div> */}
-              {/* <div className="order-1 md:order-2">Banner</div> */}
-            </section>
-          ))}
-        </div>
-
+        <Servicios />
         {/* //!FAQ */}
 
         <h1 className="pt-10 pb-5 font-Bebas-Neue text-4xl text-gray-700">

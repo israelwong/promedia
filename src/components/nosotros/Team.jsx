@@ -60,12 +60,20 @@ function Team() {
               <p className="text-sm text-gray-500">Social Media</p>
             </div>
           </div>
-          <div className="flex space-x-4">
+          {/* <div className="flex space-x-4">
             {" "}
             <Avatar isBordered={true} name="Fatima" size="lg" />
             <div>
               <h6 className="text-xl">Fatima Espinoza</h6>
               <p className="text-sm text-gray-500">Diseño gráfico</p>
+            </div>
+          </div> */}
+          <div className="flex space-x-4">
+            {" "}
+            <Avatar isBordered={true} name="DW" size="lg" />
+            <div>
+              <h6 className="text-xl">David Wong</h6>
+              <p className="text-sm text-gray-500">Comercialización</p>
             </div>
           </div>
         </div>
