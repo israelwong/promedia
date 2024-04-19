@@ -17,7 +17,7 @@ function home() {
           playsInline
           controls
           alt="Demo reel"
-          src="./bites/reel_2024_720_CBR3.mp4"
+          src="./video/reel_1min_SD.mp4"
         />
       </section>
       <section className="md:w-[75%] m-auto">
