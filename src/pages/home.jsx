@@ -27,6 +27,7 @@ function home() {
           className="w-full py-8 md:p-0 md:w-[70%] md:m-auto"
           playsInline
           loop
+          autoPlay
           controls
           alt="All the devices"
           src="./bites/reel_2024_720_CBR3.mp4"
