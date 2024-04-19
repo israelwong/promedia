@@ -1,13 +1,4 @@
-import React from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Divider,
-  Link,
-  Image,
-} from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Divider, Image } from "@nextui-org/react";
 
 import Hero from "../components/nosotros/Hero.jsx";
 import Team from "../components/nosotros/Team.jsx";
@@ -17,6 +8,7 @@ function nosotros() {
     <div className=" md:max-w-[1010px] md:mx-auto mb-12">
       {/* //!NOSOTROS */}
       <Hero />
+
       <div className="">
         {/* //!TEAM */}
         <Team />

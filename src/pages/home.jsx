@@ -1,33 +1,10 @@
-import React, { useEffect, useRef } from "react";
 import Hero from "../components/home/Hero.jsx";
 import HeroNosotros from "../components/nosotros/Hero.jsx";
 import ClientesLogos from "../components/home/ClientesLogos.jsx";
 import Servicios from "../components/servicios/Servicios.jsx";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Divider,
-  Link,
-  Image,
-} from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 
 function home() {
-  const videoEl = useRef(null);
-
-  const attemptPlay = () => {
-    videoEl &&
-      videoEl.current &&
-      videoEl.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
-  };
-
-  useEffect(() => {
-    attemptPlay();
-  }, []);
-
   return (
     <div className="">
       <section>
@@ -35,14 +12,12 @@ function home() {
       </section>
       <section>
         <video
+          poster="./images/poster-demoreel-web.jpg"
           className="w-full py-8 md:p-0 md:w-[70%] md:m-auto"
-          autoPlay
           playsInline
-          loop
           controls
-          alt="All the devices"
+          alt="Demo reel"
           src="./bites/reel_2024_720_CBR3.mp4"
-          ref={videoEl}
         />
       </section>
       <section className="md:w-[75%] m-auto">
