@@ -1,5 +1,5 @@
 import express from "express";
-import path from "path";
+// import path from "path";
 import cors from "cors";
 import morgan from "morgan";
 import { PORT } from "./config.js";
@@ -14,7 +14,7 @@ app.use(cors());
 
 //! routes
 app.use("/api", colaborador);
-app.use(express.static(path.resolve("src")));
+// app.use(express.static(path.resolve("src")));
 
 //funcion middlewhere para mandar mensaje si no encuentra la routa
 app.use((req, res, next) => {
