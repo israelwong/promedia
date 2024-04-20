@@ -29,6 +29,17 @@ function home() {
       </div>
 
       <section className="p-10">
+        <h3
+          className="
+        m-auto
+        text-center
+        pb-5
+        text-4xl font-Bebas-Neue py-2 text-gray-500
+        tracking-wide
+        "
+        >
+          Servicios
+        </h3>
         <Servicios />
       </section>
 
@@ -38,7 +49,7 @@ function home() {
 
       <section className="m-auto text-center py-10">
         <p className="text-8xl font-Bebas-Neue py-2 text-gray-300">
-          10 años de experiencia
+          <span className="text-yellow-200">10 años</span> de experiencia
         </p>
         <p className="text-4xl font-bold text-purple-500">
           Nos respaldan <span className="animate-bounce">😎</span>
