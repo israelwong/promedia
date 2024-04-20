@@ -12,12 +12,12 @@ function home() {
       </section>
       <section>
         <video
-          poster="./images/poster-demoreel-web.jpg"
+          poster="./images/portada-video-web.jpg"
           className="w-full py-8 md:p-0 md:w-[70%] md:m-auto"
           playsInline
           controls
           alt="Demo reel"
-          src="./video/reel_1min_SD.mp4"
+          src="./video/reel2024_1min_SD.mp4"
         />
       </section>
       <section className="md:w-[75%] m-auto">

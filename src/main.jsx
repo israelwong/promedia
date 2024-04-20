@@ -14,7 +14,6 @@ import Contacto from "./pages/contacto.jsx";
 import Casos from "./pages/casos.jsx";
 import Login from "./admin/login.jsx";
 import NotFound from "./notFound.jsx";
-import Index from "./index.jsx";
 
 import { AuthContextProvider } from "./auth/AuthContext.jsx";
 import ProtectedRoutes from "./routes/ProtectedRoutes.jsx";

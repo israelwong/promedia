@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Input } from "@nextui-org/react";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function loginForm() {
   const { login } = React.useContext(AuthContext);
@@ -72,13 +73,16 @@ function loginForm() {
               defaultValue=""
             />
             <p className="text-sm">{errors.password?.message}</p>
-            <button className="btn w-full bg-cyan-800 hover:bg-cyan-950">
-              Iniciar sesión
+            <button className="btn w-full bg-cyan-700 hover:bg-cyan-950">
+              Ingresar
             </button>
+            <Link to={"/"} className="btn bg-gray-900 w-full">
+              Cancelar
+            </Link>
           </form>
           {error && (
-            <p className="text-center text-warning py-5">
-              Verifica el nombre de usuario y la contraseña
+            <p className="text-center text-red-600 py-5">
+              Verifica tus credenciales de acceso
             </p>
           )}
         </div>
