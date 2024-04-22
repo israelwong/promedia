@@ -3,13 +3,25 @@ import HeroNosotros from "../components/nosotros/Hero.jsx";
 import ClientesLogos from "../components/home/ClientesLogos.jsx";
 import Servicios from "../components/servicios/Servicios.jsx";
 import { Divider } from "@nextui-org/react";
+import { motion } from "framer-motion";
 
 function home() {
   return (
     <div className="">
       <section>
-        <Hero />
+        <motion.div
+          initial={{ opacity: 0 }}
+          viewport={{ once: false }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            ease: "easeOut",
+            duration: 4,
+          }}
+        >
+          <Hero />
+        </motion.div>
       </section>
+
       <section>
         <video
           poster="./images/portada-video-web.jpg"
@@ -20,6 +32,7 @@ function home() {
           src="./video/reel2024_1min_SD.mp4"
         />
       </section>
+
       <section className="md:w-[75%] m-auto">
         <HeroNosotros />
       </section>
@@ -29,17 +42,23 @@ function home() {
       </div>
 
       <section className="p-10">
-        <h3
-          className="
+        <motion.div
+          initial={{ opacity: 0 }}
+          viewport={{ once: false }}
+          whileInView={{ opacity: 1 }}
+        >
+          <h3
+            className="
         m-auto
         text-center
         pb-5
         text-4xl font-Bebas-Neue py-2 text-gray-500
         tracking-wide
         "
-        >
-          Servicios
-        </h3>
+          >
+            Servicios
+          </h3>
+        </motion.div>
         <Servicios />
       </section>
 

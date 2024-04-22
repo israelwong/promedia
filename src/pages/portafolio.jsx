@@ -1,45 +1,46 @@
-import React from "react";
+import { Tabs, Tab } from "@nextui-org/react";
+import Video from "../components/portafolio/portafolio.video.jsx";
+import Fotografia from "../components/portafolio/portafolio.fotografia.jsx";
+import Diseno from "../components/portafolio/portafolio.diseno.jsx";
+import Web from "../components/portafolio/portafolio.web.jsx";
 
 function portafolio() {
+  const tabs = [
+    {
+      label: "Video",
+      content: <Video />,
+    },
+    {
+      label: "Fotografía",
+      content: <Fotografia />,
+    },
+    // {
+    //   label: "Diseno",
+    //   content: <Diseno />,
+    // },
+    // {
+    //   label: "Web",
+    //   content: <Web />,
+    // },
+  ];
+
   return (
     <div>
       <div>
-        <section className="p-40 text-center text-3xl space-y-5">
-          <div className="card w-96 bg-neutral text-neutral-content m-auto">
-            <div className="card-body items-center text-center">
-              <h2 className="card-title">Muy pronto!</h2>
-              <p>
-                Publicaremos todos los proyectos en los que hemos trabajado.
-              </p>
-              <div className="card-actions justify-end">
-                <div className="grid grid-flow-col gap-1 p-2">
-                  <a
-                    className="p-3"
-                    href="https://www.instagram.com/promediamx"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                  <a
-                    className="p-3"
-                    href="https://www.facebook.com/ProMediaMexico"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a className="p-3">
-                    <i className="fab fa-tiktok"></i>
-                  </a>
-                  <a className="p-3">
-                    <i className="fab fa-whatsapp"></i>
-                  </a>
-                  <a className="p-3">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <section className="text-center text-3xl">
+          <Tabs
+            className="mt-10 mb-0"
+            aria-label="Options"
+            color="default"
+            variant="bordered"
+            size="lg"
+          >
+            {tabs.map((tab) => (
+              <Tab key={tab.label} title={tab.label}>
+                {tab.content}
+              </Tab>
+            ))}
+          </Tabs>
         </section>
       </div>
     </div>

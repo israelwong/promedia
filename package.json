@@ -27,11 +27,15 @@
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-grid-gallery": "^1.0.1-alpha.0",
     "react-hook-form": "^7.51.3",
+    "react-photo-album": "^2.3.1",
     "react-router-dom": "^6.22.3",
     "react-to-print": "^2.15.1",
     "react-type-animation": "^3.2.0",
-    "uvcanvas": "^0.2.1"
+    "swiper": "^11.1.1",
+    "uvcanvas": "^0.2.1",
+    "yet-another-react-lightbox": "^3.17.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
