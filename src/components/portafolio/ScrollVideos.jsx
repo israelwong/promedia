@@ -74,8 +74,10 @@ function ScrollVideos() {
               <video
                 className="w-full"
                 playsInline
+                buffered="true"
+                preload="auto"
                 autoPlay
-                controls
+                // controls
                 loop
                 alt={video.titulo}
                 src={video.path}
