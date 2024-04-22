@@ -44,6 +44,7 @@ function ScrollVideos() {
         {/* <h3 className="pb-5 text-gray-600 font-Bebas-Neue">
           <span className="text-cyan-600 underline">clipcitos</span> de video 
         </h3> */}
+
         <Swiper
           slidesPerView={1.5}
           spaceBetween={5}
@@ -74,9 +75,9 @@ function ScrollVideos() {
                 className="w-full"
                 playsInline
                 autoPlay
-                // controls
+                controls
                 loop
-                alt="Demo reel"
+                alt={video.titulo}
                 src={video.path}
               />
               <h5 className="text-sm py-1 text-gray-600">{video.titulo}</h5>
