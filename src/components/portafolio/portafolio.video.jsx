@@ -1,6 +1,41 @@
 import ScrollVideos from "./ScrollVideos.jsx";
 
 function Video() {
+  const videos = [
+    {
+      titulo: "Restaurantes",
+      path: "./video/bites/restaurante_720.mp4",
+    },
+    {
+      titulo: "Corporativo",
+      path: "./video/bites/corporativo_720.mp4",
+    },
+    {
+      titulo: "Educativo",
+      path: "./video/bites/educativo_720.mp4",
+    },
+    {
+      titulo: "Gimnasios",
+      path: "./video/bites/gym_720.mp4",
+    },
+    {
+      titulo: "Gobierno",
+      path: "./video/bites/gobierno_720.mp4",
+    },
+    {
+      titulo: "Acuatica",
+      path: "./video/bites/acuatica_720.mp4",
+    },
+    {
+      titulo: "Inmuebles",
+      path: "./video/bites/inmuebles_720.mp4",
+    },
+    {
+      titulo: "Spas",
+      path: "./video/bites/spa_720.mp4",
+    },
+  ];
+
   return (
     <div>
       <section className="grid grid-cols-1 p-y w-full m-auto md:w-[70%] items-center">
@@ -24,8 +59,25 @@ function Video() {
         </h2>
       </section>
 
-      <section className="mb-20">
-        <ScrollVideos />
+      <section
+        className="
+        grid
+        grid-cols-2
+        md:grid-cols-3 
+        mb-20"
+      >
+        {videos.map((video, index) => (
+          <div key={index} className="mb-10">
+            <video
+              className="w-full"
+              playsInline
+              controls
+              alt={video.titulo}
+              src={video.path}
+            />
+            <h5 className="text-sm text-gray-600">{video.titulo}</h5>
+          </div>
+        ))}
       </section>
     </div>
   );
