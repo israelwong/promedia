@@ -33,14 +33,19 @@ function Fotografia() {
         <Tabs aria-label="Options" variant="underlined" radius="full">
           {categorias.map((categoria) => (
             <Tab key={categoria.label} title={categoria.label}>
-              {/* <h3 className="py-5">{categoria.label}</h3> */}
               <div>
                 <PhotoAlbum
+                  lazyLoad={true}
                   index={1}
                   photos={categoria.photos}
                   layout="rows"
                   targetRowHeight={150}
                   onClick={({ index }) => setIndex(index)}
+                  componentsProps={(containerWidth) => ({
+                    imageProps: {
+                      loading: (containerWidth || 0) > 600 ? "eager" : "lazy",
+                    },
+                  })}
                 />
                 <Lightbox
                   slides={categoria.photos}
