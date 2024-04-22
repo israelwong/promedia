@@ -10,7 +10,7 @@ const fotosCorporativas = [
   {
     src: `${path}2.jpg`,
     width: 1200,
-    height: 800,
+    height: 801,
   },
   {
     src: `${path}3.jpg`,
@@ -44,13 +44,13 @@ const fotosCorporativas = [
   },
   {
     src: `${path}9.jpg`,
-    width: 1200,
-    height: 801,
+    width: 977,
+    height: 1200,
   },
   {
     src: `${path}10.jpg`,
-    width: 977,
-    height: 1200,
+    width: 1200,
+    height: 801,
   },
   {
     src: `${path}11.jpg`,
@@ -95,10 +95,30 @@ const fotosCorporativas = [
   {
     src: `${path}20.jpg`,
     width: 1200,
-    height: 801,
+    height: 753,
   },
   {
     src: `${path}21.jpg`,
+    width: 1200,
+    height: 801,
+  },
+  {
+    src: `${path}22.jpg`,
+    width: 1200,
+    height: 801,
+  },
+  {
+    src: `${path}23.jpg`,
+    width: 1200,
+    height: 801,
+  },
+  {
+    src: `${path}24.jpg`,
+    width: 1200,
+    height: 801,
+  },
+  {
+    src: `${path}25.jpg`,
     width: 1200,
     height: 801,
   },
