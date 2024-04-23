@@ -76,11 +76,11 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <AuthContextProvider>
-      <>
-        <RouterProvider router={router} future={{ v7_startTransition: true }} />
-      </>
-    </AuthContextProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  <AuthContextProvider>
+    <>
+      <RouterProvider router={router} future={{ v7_startTransition: true }} />
+    </>
+  </AuthContextProvider>
+  // </React.StrictMode>
 );
