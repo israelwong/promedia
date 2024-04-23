@@ -4,12 +4,12 @@ import { Tabs, Tab } from "@nextui-org/react";
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-// import fotosCorporativas from "./galerias/fotos.corporativas";
-// import fotosGastronomicas from "./galerias/fotos.gastronomicas";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import axios from "axios";
 
 function Fotografia() {
+  // const url = "http://localhost:3306/api";//!
+  const url = "https://promedia-production.up.railway.app/api"; //!
   const [index, setIndex] = React.useState(-1);
   const [json, setJson] = useState();
 
@@ -20,7 +20,7 @@ function Fotografia() {
   async function getFotos(folder) {
     const { data } = await axios({
       method: "post",
-      url: "http://localhost:3306/api/galeria/",
+      url: `${url}/galeria/`,
       data: {
         galeria: folder,
       },

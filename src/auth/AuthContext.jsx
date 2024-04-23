@@ -6,13 +6,15 @@ export const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const url = "https://promedia-production.up.railway.app/api";
+  // const url ='http://localhost:3306/api/'
 
   async function login(user, password) {
     let respose = false;
 
     const { data } = await axios({
       method: "post",
-      url: "http://localhost:3306/api/colaborador-auth/",
+      url: `${url}/colaborador-auth/`,
       data: {
         user,
         password,
