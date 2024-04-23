@@ -18,9 +18,9 @@ function MainMenu() {
 
   const link_wa = "https://wa.link/hcfarx";
 
-  function openLink() {
-    window.open(link_wa, "_blank");
-  }
+  // function openLink() {
+  //   window.open(link_wa, "_blank");
+  // }
 
   return (
     <>

@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 function loginForm() {
   const { login } = React.useContext(AuthContext);
-  // const { setIsAuthenticated } = React.useContext(AuthContext);
   const [error, setError] = useState(false);
   const navigate = useNavigate();
 
@@ -22,11 +21,9 @@ function loginForm() {
   async function validar(data) {
     if (data.user != "" && data.password != "") {
       const response = await login(data.user, data.password);
-      // console.log(response);
       if (response) {
-        // setIsAuthenticated(true);
         navigate("/admin/dashboard");
-        setError(false);
+        // setError(false);
       } else setError(true);
     }
   }

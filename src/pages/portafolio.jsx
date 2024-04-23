@@ -7,12 +7,12 @@ import Web from "../components/portafolio/portafolio.web.jsx";
 function portafolio() {
   const tabs = [
     {
-      label: "Fotografía",
-      content: <Fotografia />,
-    },
-    {
       label: "Video",
       content: <Video />,
+    },
+    {
+      label: "Fotografía",
+      content: <Fotografia />,
     },
     // {
     //   label: "Diseno",
