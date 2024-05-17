@@ -18,9 +18,9 @@ function MainMenu() {
 
   const link_wa = "https://wa.link/hcfarx";
 
-  // function openLink() {
-  //   window.open(link_wa, "_blank");
-  // }
+  function openLink() {
+    window.open(link_wa, "_blank");
+  }
 
   return (
     <>
@@ -85,12 +85,15 @@ function MainMenu() {
           </ul>
         </div>
         <div className="navbar-end">
-          {/* <button className="btn" onClick={() => openLink()}>
+          <button
+            className="btn btn-ghost text-cyan-500 border-cyan-500"
+            onClick={() => openLink()}
+          >
             Contactar <i className="fab fa-whatsapp"></i>
-          </button> */}
-          <Link className="btn" to={"/dashboard"}>
+          </button>
+          {/* <Link className="btn" to={"/dashboard"}>
             Login
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>
