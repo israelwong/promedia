@@ -21,9 +21,10 @@ function loginForm() {
   async function validar(data) {
     if (data.user != "" && data.password != "") {
       const response = await login(data.user, data.password);
+      console.log(response);
       if (response) {
-        navigate("/admin/dashboard");
-        // setError(false);
+        navigate("/dashboard/principal");
+        setError(false);
       } else setError(true);
     }
   }

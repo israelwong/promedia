@@ -12,13 +12,20 @@ import Portafolio from "./pages/portafolio.jsx";
 import Servicios from "./pages/servicios.jsx";
 import Contacto from "./pages/contacto.jsx";
 import Casos from "./pages/casos.jsx";
-import Login from "./admin/login.jsx";
+import Login from "./dashboard/login.jsx";
 import NotFound from "./notFound.jsx";
 
 import { AuthContextProvider } from "./auth/AuthContext.jsx";
 import ProtectedRoutes from "./routes/ProtectedRoutes.jsx";
-import Dashboard from "./admin/dashboard.jsx";
+import DashboardPrincipal from "./dashboard/principal.jsx";
 import Layout from "./components/Layout.jsx";
+
+import Configuracion from "./dashboard/configuracion.jsx";
+import Prospectos from "./dashboard/prospectos.jsx";
+import Contabilidad from "./dashboard/contabilidad.jsx";
+import Proyectos from "./dashboard/proyectos.jsx";
+import ConfiguracionServicios from "./dashboard/configuracion.servicios.jsx";
+import ConfiguracionColaboradores from "./dashboard/configuracion.colaboradores.jsx";
 
 const router = createBrowserRouter([
   {
@@ -56,7 +63,7 @@ const router = createBrowserRouter([
         errorElement: <notFound />,
       },
       {
-        path: "/admin/",
+        path: "/dashboard/",
         element: <Login />,
         errorElement: <notFound />,
       },
@@ -68,19 +75,41 @@ const router = createBrowserRouter([
     element: <ProtectedRoutes />,
     children: [
       {
-        path: "/admin/dashboard",
-        element: <Dashboard />,
+        path: "/dashboard/principal",
+        element: <DashboardPrincipal />,
+      },
+      {
+        path: "/dashboard/configuracion",
+        element: <Configuracion />,
+      },
+      {
+        path: "/dashboard/configuracion/servicios",
+        element: <ConfiguracionServicios />,
+      },
+      {
+        path: "/dashboard/configuracion/colaboradores",
+        element: <ConfiguracionColaboradores />,
+      },
+      {
+        path: "/dashboard/contabilidad",
+        element: <Contabilidad />,
+      },
+      {
+        path: "/dashboard/prospectos",
+        element: <Prospectos />,
+      },
+      {
+        path: "/dashboard/proyectos",
+        element: <Proyectos />,
       },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <React.StrictMode>
-  <AuthContextProvider>
-    <>
+  <>
+    <AuthContextProvider>
       <RouterProvider router={router} future={{ v7_startTransition: true }} />
-    </>
-  </AuthContextProvider>
-  // </React.StrictMode>
+    </AuthContextProvider>
+  </>
 );

@@ -48,7 +48,7 @@ function servicios() {
         <Servicios />
         {/* //!FAQ */}
 
-        <h1 className="pt-10 pb-5 font-Bebas-Neue text-4xl text-gray-700">
+        {/* <h1 className="pt-10 pb-5 font-Bebas-Neue text-4xl text-gray-700">
           Preguntas frecuentes
         </h1>
         <section>
@@ -59,7 +59,7 @@ function servicios() {
               </AccordionItem>
             ))}
           </Accordion>
-        </section>
+        </section> */}
       </div>
     </div>
   );

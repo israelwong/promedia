@@ -11,7 +11,7 @@ function nosotros() {
 
       <div className="">
         {/* //!TEAM */}
-        <Team />
+        {/* <Team /> */}
 
         {/* //!MISIÓN VISIÓN VALORRES */}
 
@@ -23,7 +23,7 @@ function nosotros() {
         >
           {/* //!EXPERIENCIA */}
           <Card className="">
-            <CardHeader className="flex gap-3">
+            {/* <CardHeader className="flex gap-3">
               <Image
                 alt="ProMedia Logo"
                 height={22}
@@ -37,7 +37,7 @@ function nosotros() {
                 </p>
               </div>
             </CardHeader>
-            <Divider />
+            <Divider /> */}
             <CardBody>
               <p className="text-3xl py-3 text-gray-400 leading-9">
                 Todos nuestros clientes son importantes y merecen un servicio

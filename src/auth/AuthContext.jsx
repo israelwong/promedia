@@ -6,8 +6,8 @@ export const AuthContext = createContext();
 
 export function AuthContextProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const url = "https://promedia-production.up.railway.app/api";
-  // const url ='http://localhost:3306/api/'
+  // const url = "https://promedia-production.up.railway.app/api";
+  const url = "http://localhost:3306/api/";
 
   async function login(user, password) {
     let respose = false;
@@ -20,6 +20,8 @@ export function AuthContextProvider({ children }) {
         password,
       },
     });
+
+    // console.log(data);
 
     if (data.estatus === 200) {
       localStorage.setItem("UserData", JSON.stringify(data));

@@ -41,7 +41,7 @@ function home() {
         <Divider orientation="horizontal" />
       </div>
 
-      <section className="p-10">
+      {/* <section className="p-10">
         <motion.div
           initial={{ opacity: 0 }}
           viewport={{ once: false }}
@@ -60,24 +60,24 @@ function home() {
           </h3>
         </motion.div>
         <Servicios />
-      </section>
+      </section> */}
 
-      <div className="py-10">
+      {/* <div className="py-10">
         <Divider orientation="horizontal" />
-      </div>
+      </div> */}
 
-      <section className="m-auto text-center py-10">
+      {/* <section className="m-auto text-center py-10">
         <p className="text-8xl font-Bebas-Neue py-2 text-gray-300">
           <span className="text-yellow-200">10 años</span> de experiencia
         </p>
         <p className="text-4xl font-bold text-purple-500">
           Nos respaldan <span className="animate-bounce">😎</span>
         </p>
-      </section>
+      </section> */}
 
-      <div className="py-10">
+      {/* <div className="py-10">
         <Divider orientation="horizontal" />
-      </div>
+      </div> */}
 
       <section>
         <ClientesLogos />

@@ -48,8 +48,10 @@ function Video() {
           alt="Demo reel"
           src="./video/reel2024_2min_SD.mp4"
         />
+        <p className="p-5 text-xl">Demo reel</p>
       </section>
-      <section
+
+      {/* <section
         className="
         grid
         grid-cols-2
@@ -68,7 +70,7 @@ function Video() {
             <h5 className="text-sm text-gray-600">{video.titulo}</h5>
           </div>
         ))}
-      </section>
+      </section> */}
     </div>
   );
 }
